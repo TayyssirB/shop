@@ -1,0 +1,430 @@
+:root {
+  --background-color: #a04955;
+  --primary-font-family: "Oswald";
+  --secondary-font-family: "Open Sans";
+  --headings-color: #001f3d;
+  --accent-color: #f3f3f3;
+  --button-border: 1px solid black;
+}
+
+h1,
+h4 {
+  font-family: var(--primary-font-family);
+  color: var(--headings-color);
+}
+
+h2,
+h3,
+h5 {
+  font-family: var(--primary-font-family);
+  color: #333333;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 86px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+}
+
+h1,
+h2,
+.discounts h3,
+.shirt h3,
+h4,
+.header .menu-item a,
+a.button {
+  text-transform: uppercase;
+}
+
+p,
+a.button {
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+a.button {
+  border: var(--button-border);
+  padding: 10px 15px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container.header {
+  margin: 30px 60px;
+}
+
+.container.shorts,
+.container.pants {
+  margin: 90px 60px;
+}
+
+.container.trend{
+  margin-bottom: 100px;
+}
+
+.container.about-us {
+  margin: 0 60px;
+}
+
+.menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-item a {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--primary-font-family);
+}
+
+.header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .menu-item {
+  display: inline;
+  padding: 0 15px;
+}
+
+.header .menu-item a {
+  color: #333333;
+}
+
+.search {
+  border: 1px solid var(--background-color);
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search input {
+  border: none;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search input::placeholder {
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.search button {
+  border: none;
+  background-color: white;
+}
+
+.search .search-icon {
+  color: var(--background-color);
+}
+
+.shorts,
+.pants {
+  gap: 36px;
+}
+
+.shorts .col,
+.pants .col {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.discounts {
+  background-color: var(--accent-color);
+  text-align: center;
+  padding: 80px 0;
+  margin: 60px 0;
+}
+
+.discounts .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin: 0 43px;
+  font-family: var(--primary-font-family);
+}
+
+.discounts .card {
+  background-color: white;
+  width: 280px;
+  height: 416px;
+  padding: 30px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.discounts .stars {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.discounts .card p {
+  text-align: center;
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  margin: 0;
+}
+
+.discounts .card span {
+  font-weight: 600;
+}
+
+.discounts .card p::before {
+  content: "As low as ";
+  font-size: 18px;
+}
+
+.discounts button {
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+  background-color: var(--background-color);
+  border: none;
+  line-height: 40px;
+  margin: 20px auto;
+}
+
+.discounts button::before {
+  content: url("../images/homepage_images/shopping-bag\ 1.png");
+  position: relative;
+  left: 0;
+  top: 10px;
+}
+
+.container.shirt {
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
+.container.shirt-desc {
+  margin: 107px 152px;
+  gap: 36px;
+}
+
+.new-discount {
+  position: relative;
+  display: inline-block;
+}
+
+.new-discount image {
+  max-width: 100%;
+}
+
+.new-discount h3 {
+  color: white;
+  background: rgb(160, 73, 85, 0.8);
+  height: 86px;
+  line-height: 80px;
+  margin: 0;
+  position: absolute;
+  bottom: 237px;
+  width: 100%;
+}
+
+.new-discount .button {
+  display: block;
+  width: 366px;
+  margin: 0 auto;
+}
+
+.sportif-pants-image {
+  position: relative;
+  display: inline-block;
+}
+
+.sportif-pants {
+  position: absolute;
+  bottom: 0;
+  width: 38%;
+  left: 80px;
+  bottom: 60px;
+}
+
+.sportif-pants h1,
+.sportif-pants p,
+.sportif-pants .button {
+  color: white;
+}
+
+.sportif-pants p {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.sportif-pants .button {
+  background-color: var(--background-color);
+  border: none;
+  margin-top: 10px;
+}
+
+.sportif-trend {
+  margin: 90px 60px 0 60px;
+  width: 100%;
+  position: relative;
+}
+
+.sportif-trend h1 {
+  color: white;
+  background-color: var(--background-color);
+  padding: 30px 0 200px 0;
+  text-align: center;
+}
+
+.sportif-items {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 155px;
+}
+
+.sportif-item {
+  border: 1px solid var(--background-color);
+  width: 280px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.sportif-item h5 {
+  margin: 20px;
+}
+
+.sportif-item .button {
+  font-size: 18px;
+  color: white;
+  background-color: var(--background-color);
+  border: none;
+  width: 240px;
+}
+
+.container.about {
+  position: relative;
+  display: inline-block;
+}
+
+.container.about .image {
+  position: absolute;
+  left: 488px;
+  top: -167px;
+}
+
+.container.about-us {
+  background-color: var(--accent-color);
+  flex-direction: column;
+  padding: 130px 90px 43px 90px;
+}
+
+.footer {
+  background-color: var(--background-color);
+  padding: 0 60px;
+  gap: 42px;
+  align-items: flex-start;
+}
+
+.footer a,
+.footer p {
+  color: white;
+  line-height: 1.7rem;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer .get-to-know-us {
+  width: 40%;
+}
+
+.footer .subscribe {
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer .subscribe > input {
+  border: none;
+  height: 61px;
+  background: var(--accent-color);
+}
+
+.footer .subscribe > input:focus {
+  outline: none;
+}
+
+.footer .subscribe > input::placeholder {
+  text-transform: uppercase;
+  color: var(--background-color);
+  padding-left: 25px;
+  font-family: var(--primary-font-family);
+}
+
+.footer .button {
+  margin: 8px;
+  padding: 0 25px;
+  line-height: 45px;
+  background-color: var(--background-color);
+  font-family: var(--primary-font-family);
+}
+
+sub.copywrite {
+  margin-left: 60px;
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 14px;
+}
